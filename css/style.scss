@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    margin: 40px auto 60px auto;
+}
+
+.formWrapper {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px gray;
+    text-align: center;
+    padding: 20px 40px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    div {
+
+        label {
+            font-size: 20px;
+        }
+        input {
+            width: 80%;
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-shadow: 0px 1px 4px gray;
+            margin: 20px 10px 0 10px;
+            font-size: 14px;
+
+            &.inputError {
+                border: 1px solid red;
+                box-shadow: 1px 1px 1px red;
+                animation: shake 1s;
+            }
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        select {
+            width: 40%;
+            margin: 20px 10px 0 10px;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-shadow: 0px 1px 4px gray;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &.inputError {
+                border: 1px solid red;
+                box-shadow: 1px 1px 1px red;
+                animation: shake 1s;
+                color: red;
+            }
+
+        }
+
+        @keyframes shake {
+            0% {margin-left: 0;}
+            20% {margin-left: -2px;}
+            40% {margin-left: 2px;}
+            60% {margin-left: -2px;}
+            80% {margin-left: 2px;}
+            100% {margin-left: 0;}
+        }
+
+        .erro {
+            position: relative;
+            color: red;
+            font-size: 12px;
+            margin-left: 20px;
+            
+        }
+        
+
+    }
+
+    button {
+        width: 40%;
+        height: 50px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 25px;
+        color: gray;
+        margin: 30px auto 20px auto ;
+    }
+}
+
+
+
+

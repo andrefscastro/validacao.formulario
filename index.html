@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <div class="formWrapper">
+        <h3>Faça seu Cadastro</h3>
+        <form id="formCadastro" action="gravarDados.html">
+            <div>
+                <label>
+                    Nome
+                    <input type="text" name="nome" placeholder="Digite o seu nome">
+                    <span class="erro"></span>
+                </label>
+            </div>
+    
+            <div>
+                <label>
+                    E-mail
+                    <input type="email" placeholder="Digite o seu e-mail" name="email">
+                    <span class="erro"></span>
+                </label>
+            </div>
+    
+            <div>
+                <label>
+                    Cidade
+                    <select name="cidade">
+                        <option value="">-- Selecione --</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Uberlândia</option>
+                    </select>
+                    <span class="erro"></span>
+                </label>
+            </div>
+    
+            <button class="submit" type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
